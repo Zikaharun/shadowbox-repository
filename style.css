@@ -1,0 +1,161 @@
+/* Resetting and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+
+/* Center horizontally */
+  justify-content: center; 
+
+/* Center vertically */
+  align-items: center;
+  background-image: linear-gradient(to bottom, #1488cc, #2b32b2);
+
+/* Prevent content from touching screen edges */
+  padding: 20px; 
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  margin: 5px;
+}
+
+.btn {
+  background-color: #0270c6;
+  padding: .5em;
+  box-shadow: 5px 4px 6px 0px #000000;
+  border-radius: 13px;
+  color: #fff;
+  
+}
+
+.btn:hover {
+  background-color: #1292f3;
+  box-shadow: 1px 1px 6px 0px #000000;border-radius: 13px;
+}
+
+.main {
+  box-shadow: 0px 0px 5px 0px #0a68ff;border-radius: 0px;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  
+  transition: all 0.3s ease;
+}
+
+label {
+  background-color: #fff;
+
+/* Add space between label and next element */
+  margin-bottom: 10px; 
+
+  font-size: large;
+}
+
+/* Container for label and input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+/* Space between each form group */
+  margin-bottom: 20px; 
+}
+
+.form-group label {
+/* Space between label and input */
+  margin-bottom: 5px; 
+}
+
+.preview-box {
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #1488cc, #2b32b2);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.textarea {
+  width: 55%;
+  padding: .5em;
+  margin: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 4px 6px 0px #000000;border-radius: 13px;
+}
+
+.copy {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+/* Preview box specific styles */
+.preview-box {
+  height: 80px;
+  margin: 20px auto;
+  border: 1px solid black;
+  width: 50%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .main {
+  /* Reduce width on tablets */
+    width: 80%; 
+    padding: 15px;
+  }
+
+  .preview-box {
+  /* Adjust to full width on smaller screens */
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .textarea {
+    width: 55%;
+    font-size: x-small;
+  }
+
+  .form-group {
+  /* Ensure label and input are stacked vertically */
+    flex-direction: column; 
+  }
+}
+
+/* Extra small screens (mobile phones) */
+@media (max-width: 480px) {
+  .main {
+  /* setting width on small screens */
+    width: 90%; 
+    padding: 10px;
+  }
+
+   .preview-box {
+  /* setting width for inputs on mobile */
+    width: 50%; 
+    margin-bottom: 10px;
+  }
+
+  .textarea {
+    width: 55%;
+    font-size: x-small;
+  }
+
+ /* Reduce spacing between form groups */
+  .form-group {
+    margin-bottom: 10px;
+  }
+}

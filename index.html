@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>shadowbox-generator</title>
+</head>
+<body>
+    
+        <div class="main">
+            <h1>Box-shadow generator.</h1>
+            <div class="form-group">
+                <label for="offset-x">Offset X:</label>
+                <input type="range" id="offset-x" name="offset-x" min="-50" max="50">
+              
+                <label for="offset-y">Offset Y:</label>
+                <input type="range" id="offset-y" name="offset-y" min="-50" max="50">
+              
+                <label for="blur-radius">Blur Radius:</label>
+                <input type="range" id="blur-radius" name="blur-radius" min="0" max="50">
+              
+                <label for="spread-radius">Spread Radius:</label>
+                <input type="range" id="spread-radius" name="spread-radius" min="0" max="50">
+    
+                <label for="border-radius">Border Radius:</label>
+                <input type="range" id="border-radius" name="border-radius" min="0" max="100" value="0">
+              
+                <label for="color">Shadow Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            
+
+          
+            <div id="preview-box" class="preview-box"></div>
+
+            <div class="copy">
+                <input id="css-code" class="textarea" readonly>
+
+                <button id="copy-btn" class="btn">Copy</button>
+            </div>
+          
+      
+          </div>
+    
+   
+      <script src="script.js"></script>
+</body>
+</html>
+  
